@@ -1,0 +1,46 @@
+{
+  "name": "my-brand",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0",
+    "zustand": "^5.0.4",
+    "framer-motion": "^12.9.2",
+    "lucide-react": "^0.503.0",
+    "react-hook-form": "^7.56.1",
+    "@hookform/resolvers": "^3.10.0",
+    "zod": "^3.24.3",
+    "sql.js": "^1.11.0",
+    "idb": "^8.0.2",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "class-variance-authority": "^0.7.1",
+    "tailwindcss-animate": "^1.0.7",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-label": "^2.1.2",
+    "@fontsource/outfit": "^5.2.5",
+    "@fontsource/plus-jakarta-sans": "^5.2.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/sql.js": "^1.4.9",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.1",
+    "vite-plugin-static-copy": "^2.3.0",
+    "tailwindcss": "^4.1.4",
+    "@tailwindcss/vite": "^4.1.4",
+    "eslint": "^9.25.0"
+  }
+}

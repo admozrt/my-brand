@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Default token fallback (Forest + Bone) — overridden at runtime from brand_profile via applyBrandTheme() */
+  --color-primary: 152 27% 17%;
+  --color-secondary: 30 14% 33%;
+  --color-accent: 16 51% 51%;
+  --color-neutral-bg: 60 8% 98%;
+  --color-neutral-text: 30 6% 10%;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  --radius-card: 1.25rem;
+  --radius-control: 0.75rem;
+  --radius-pill: 999px;
+}
+
+@theme inline {
+  --color-primary: hsl(var(--color-primary));
+  --color-secondary: hsl(var(--color-secondary));
+  --color-accent: hsl(var(--color-accent));
+  --color-neutral-bg: hsl(var(--color-neutral-bg));
+  --color-neutral-text: hsl(var(--color-neutral-text));
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+body {
+  background-color: hsl(var(--color-neutral-bg));
+  color: hsl(var(--color-neutral-text));
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: hsl(var(--color-primary) / 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "brand_profile": {
+    "brand_id": "hijab-kalsel",
+    "brand_name": "Nadhira Hijab",
+    "tagline": "Hijab Nyaman, Motif Khas Banjar",
+    "business_category": "fashion",
+
+    "logo_url": "/brand-assets/logo-placeholder.svg",
+    "favicon_url": "/favicon.svg",
+    "color_primary": "#1F3A2E",
+    "color_secondary": "#6B5B4D",
+    "color_accent": "#C15F3C",
+    "color_neutral_bg": "#FAFAF8",
+    "color_neutral_text": "#1A1917",
+    "font_heading": "Outfit",
+    "font_body": "Plus Jakarta Sans",
+
+    "hero_headline": "Hijab bermotif sasirangan, dibuat untuk dipakai setiap hari",
+    "hero_subheadline": "Koleksi hijab asal Kalimantan Selatan. Adem dipakai, motifnya membawa cerita.",
+    "about_story": "Nadhira Hijab lahir dari kecintaan pada kain sasirangan khas Banjarmasin. Setiap motif kami terinspirasi dari corak tradisional Kalimantan Selatan, dipadukan dengan bahan adem dan potongan modern untuk muslimah masa kini.",
+
+    "primary_attribute_label": "Bahan",
+    "secondary_attribute_label": "Warna",
+    "size_chart_enabled": true,
+
+    "whatsapp_number": "6281234567890",
+    "whatsapp_message_template": "Halo, saya tertarik dengan {{productName}}",
+    "instagram_url": "https://instagram.com/nadhirahijab",
+    "tiktok_url": "https://tiktok.com/@nadhirahijab",
+    "address": "Jl. Sudirman No. 10, Banjarmasin, Kalimantan Selatan",
+    "map_embed_url": "",
+    "operating_hours": "Senin - Sabtu, 09.00 - 17.00 WITA"
+  },
+  "brand_hero_images": [
+    { "image_url": "https://picsum.photos/seed/nadhira-hero-main/1600/2000", "sort_order": 0 }
+  ],
+  "categories": [
+    { "name": "Pashmina", "slug": "pashmina" },
+    { "name": "Segi Empat", "slug": "segi-empat" },
+    { "name": "Bergo", "slug": "bergo" }
+  ],
+  "brand_feature_flags": {
+    "enableWishlist": false,
+    "enableBlog": false,
+    "enableDarkMode": false,
+    "enablePWA": false,
+    "enableSizeCalculator": true
+  },
+  "products": [
+    {
+      "name": "Pashmina Sasirangan Kuning Mustard",
+      "category": "pashmina",
+      "price": 85000,
+      "material": "Voal Premium",
+      "colors": ["Kuning Mustard", "Ungu"],
+      "images": ["https://picsum.photos/seed/nadhira-pashmina-mustard/900/1200"],
+      "description": "Pashmina dengan sentuhan motif sasirangan khas Banjar, bahan voal adem dan mudah dibentuk.",
+      "is_new": true,
+      "is_promo": false,
+      "stock_status": "ready"
+    },
+    {
+      "name": "Segi Empat Motif Banjar Klasik",
+      "category": "segi-empat",
+      "price": 65000,
+      "material": "Katun Ceruty",
+      "colors": ["Merah Bata", "Krem"],
+      "images": ["https://picsum.photos/seed/nadhira-segiempat-banjar/900/1200"],
+      "description": "Segi empat dengan motif klasik Banjar, cocok untuk penggunaan harian.",
+      "is_new": false,
+      "is_promo": true,
+      "stock_status": "ready"
+    },
+    {
+      "name": "Bergo Instan Polos Ungu Tua",
+      "category": "bergo",
+      "price": 55000,
+      "material": "Jersey Premium",
+      "colors": ["Ungu Tua"],
+      "images": ["https://picsum.photos/seed/nadhira-bergo-ungu/900/1200"],
+      "description": "Bergo instan praktis, bahan jersey lembut dan tidak menerawang.",
+      "is_new": false,
+      "is_promo": false,
+      "stock_status": "limited"
+    },
+    {
+      "name": "Pashmina Sasirangan Hijau Tua",
+      "category": "pashmina",
+      "price": 89000,
+      "material": "Voal Premium",
+      "colors": ["Hijau Tua", "Krem"],
+      "images": ["https://picsum.photos/seed/nadhira-pashmina-hijau/900/1200"],
+      "description": "Warna hijau tua dengan motif sasirangan yang lebih halus, cocok untuk acara formal.",
+      "is_new": true,
+      "is_promo": false,
+      "stock_status": "ready"
+    }
+  ],
+  "promotions": [
+    {
+      "title": "Promo Koleksi Ramadan",
+      "description": "Diskon untuk pembelian 2 pashmina sasirangan pilihan, berlaku selama persediaan masih ada.",
+      "discount_percent": 15,
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-31",
+      "banner_image": "https://picsum.photos/seed/nadhira-promo-ramadan/1200/600"
+    }
+  ],
+  "testimonials": [
+    {
+      "customer_name": "Fitriani, Banjarbaru",
+      "rating": 5,
+      "comment": "Bahannya adem dipakai seharian dan motifnya beda dari hijab kebanyakan. Jadi favorit buat kerja.",
+      "photo": "",
+      "product_id": 1
+    },
+    {
+      "customer_name": "Maya Rahmawati, Martapura",
+      "rating": 5,
+      "comment": "Suka banget sama warnanya, sesuai foto. Pengiriman juga cepat dan dikemas rapi.",
+      "photo": "",
+      "product_id": 2
+    }
+  ]
+}
