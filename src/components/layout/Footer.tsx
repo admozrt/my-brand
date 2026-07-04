@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useBrand } from '@/lib/brand/BrandProvider';
 import { BrandMark } from './BrandMark';
 import { CraftedByMark } from './CraftedByMark';
@@ -33,7 +34,12 @@ export function Footer() {
         <p className="text-xs text-neutral-text/35">
           &copy; {new Date().getFullYear()} {brand.meta.brandName}. Seluruh hak cipta dilindungi.
         </p>
-        <CraftedByMark />
+        <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+          <Link to="/tentang-template" className="text-xs text-neutral-text/45 hover:text-primary transition-colors">
+            Ingin situs seperti ini untuk usahamu?
+          </Link>
+          <CraftedByMark />
+        </div>
       </div>
     </footer>
   );

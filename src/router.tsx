@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { PublicLayout } from '@/components/layout/PublicLayout';
+import { PromoLayout } from '@/components/layout/PromoLayout';
 import { Home } from '@/pages/Home';
 import { Catalog } from '@/pages/Catalog';
 import { ProductDetail } from '@/pages/ProductDetail';
@@ -7,6 +8,7 @@ import { Promo } from '@/pages/Promo';
 import { About } from '@/pages/About';
 import { Testimonials } from '@/pages/Testimonials';
 import { Contact } from '@/pages/Contact';
+import { TemplatePromo } from '@/pages/TemplatePromo';
 import { AdminLayout } from '@/pages/admin/AdminLayout';
 import { AdminLogin } from '@/pages/admin/AdminLogin';
 import { ProductsManager } from '@/pages/admin/ProductsManager';
@@ -27,6 +29,10 @@ export const router = createBrowserRouter([
       { path: '/testimoni', element: <Testimonials /> },
       { path: '/kontak', element: <Contact /> },
     ],
+  },
+  {
+    element: <PromoLayout />,
+    children: [{ path: '/beranda', element: <TemplatePromo /> }],
   },
   { path: '/admin/login', element: <AdminLogin /> },
   {

@@ -3,10 +3,8 @@ import { Button } from '@/components/ui/button';
 import { getDb, persistDb } from '@/lib/db/client';
 import initSqlJs from 'sql.js';
 import { toast } from '@/components/ui/use-toast';
-import { useBrand } from '@/lib/brand/BrandProvider';
 
 export function ExportImport() {
-  const brand = useBrand();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   async function handleExport() {
@@ -16,10 +14,13 @@ export function ExportImport() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${brand.meta.brandId || 'brand'}-data.sqlite`;
+    a.download = 'data.sqlite';
     a.click();
     URL.revokeObjectURL(url);
-    toast({ title: 'Data diekspor', description: 'Commit file .sqlite ini ke repo untuk publish ke pengunjung.' });
+    toast({
+      title: 'Data diekspor',
+      description: 'Simpan file ini sebagai public/data.sqlite di project, lalu commit & push.',
+    });
   }
 
   async function handleImportChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -40,8 +41,9 @@ export function ExportImport() {
       <div className="rounded-lg border border-neutral-text/10 bg-white p-5 mb-4">
         <h2 className="font-semibold mb-2">Export Data</h2>
         <p className="text-sm text-neutral-text/60 mb-4">
-          Unduh seluruh data (produk, promo, testimoni, pengaturan brand) sebagai file .sqlite. Commit file
-          ini ke repo lalu deploy ulang agar perubahan tampil ke semua pengunjung.
+          Unduh seluruh data (produk, promo, testimoni, pengaturan brand) sebagai file data.sqlite. Simpan
+          file ini sebagai <code className="text-xs bg-neutral-text/5 px-1 py-0.5 rounded">public/data.sqlite</code> di
+          project, lalu commit &amp; push. Pengunjung baru maupun lama akan otomatis melihat data ini.
         </p>
         <Button onClick={handleExport}>Export Data</Button>
       </div>
